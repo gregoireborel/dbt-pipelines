@@ -1,0 +1,9 @@
+version: 2
+
+models:
+    - name: dim_pokemon_first_gen
+      columns:
+        - name: name
+          tests:
+            - unique
+            - not_null

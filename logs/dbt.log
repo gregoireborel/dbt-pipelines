@@ -27,3 +27,93 @@ Happy modeling!
 [0m23:43:19.343912 [debug] [MainThread]: Command `dbt init` succeeded at 23:43:19.343712 after 165.07 seconds
 [0m23:43:19.344742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f96613efa50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9638e98790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9639045f90>]}
 [0m23:43:19.345376 [debug] [MainThread]: Flushing usage events
+[0m00:27:33.563105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc4762ce50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc475ee3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc47635290>]}
+
+
+============================== 00:27:33.566786 | 096b92b7-43d0-4b9f-a297-b920df97f313 ==============================
+[0m00:27:33.566786 [info ] [MainThread]: Running with dbt=1.8.5
+[0m00:27:33.567419 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/quako/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:27:33.575050 [info ] [MainThread]: dbt version: 1.8.5
+[0m00:27:33.575489 [info ] [MainThread]: python version: 3.11.9
+[0m00:27:33.575902 [info ] [MainThread]: python path: /home/quako/.pyenv/versions/3.11.9/envs/dbt-env/bin/python
+[0m00:27:33.576278 [info ] [MainThread]: os info: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m00:27:34.205238 [info ] [MainThread]: Using profiles dir at /home/quako/.dbt
+[0m00:27:34.205792 [info ] [MainThread]: Using profiles.yml file at /home/quako/.dbt/profiles.yml
+[0m00:27:34.206173 [info ] [MainThread]: Using dbt_project.yml file at /home/quako/dbt-pipelines/dbt_project.yml
+[0m00:27:34.206550 [info ] [MainThread]: adapter type: bigquery
+[0m00:27:34.206917 [info ] [MainThread]: adapter version: 1.8.2
+[0m00:27:34.207307 [info ] [MainThread]: Configuration:
+[0m00:27:34.207669 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:27:34.208030 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:27:34.208394 [info ] [MainThread]: Required dependencies:
+[0m00:27:34.209073 [debug] [MainThread]: Executing "git --help"
+[0m00:27:34.213867 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:27:34.214315 [debug] [MainThread]: STDERR: "b''"
+[0m00:27:34.214638 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:27:34.215019 [info ] [MainThread]: Connection:
+[0m00:27:34.215409 [info ] [MainThread]:   method: oauth
+[0m00:27:34.215773 [info ] [MainThread]:   database: gborel-sample-project
+[0m00:27:34.216162 [info ] [MainThread]:   execution_project: gborel-sample-project
+[0m00:27:34.216522 [info ] [MainThread]:   schema: dev
+[0m00:27:34.216880 [info ] [MainThread]:   location: EU
+[0m00:27:34.217254 [info ] [MainThread]:   priority: interactive
+[0m00:27:34.217615 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m00:27:34.217974 [info ] [MainThread]:   impersonate_service_account: None
+[0m00:27:34.218333 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m00:27:34.218693 [info ] [MainThread]:   job_retries: 1
+[0m00:27:34.219050 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m00:27:34.219405 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m00:27:34.219759 [info ] [MainThread]:   timeout_seconds: 300
+[0m00:27:34.220118 [info ] [MainThread]:   client_id: None
+[0m00:27:34.220555 [info ] [MainThread]:   token_uri: None
+[0m00:27:34.220952 [info ] [MainThread]:   dataproc_region: None
+[0m00:27:34.221362 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m00:27:34.221840 [info ] [MainThread]:   gcs_bucket: None
+[0m00:27:34.222250 [info ] [MainThread]:   dataproc_batch: None
+[0m00:27:34.222832 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m00:27:34.225620 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m00:27:34.226156 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:27:35.122165 [debug] [MainThread]: On debug: select 1 as id
+[0m00:27:38.029139 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gborel-sample-project&j=bq:EU:43ed07e1-e6a9-47f1-a763-b1dc46a9c7aa&page=queryresults
+[0m00:27:38.321067 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m00:27:38.321624 [info ] [MainThread]: [31m1 check failed:[0m
+[0m00:27:38.322001 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/quako/dbt-pipelines/dbt_project.yml> not found
+
+[0m00:27:38.324055 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 4.808018, "process_user_time": 2.562838, "process_kernel_time": 0.170983, "process_mem_max_rss": "230120", "process_in_blocks": "1320", "process_out_blocks": "32", "command_success": false}
+[0m00:27:38.324592 [debug] [MainThread]: Command `dbt debug` failed at 00:27:38.324494 after 4.81 seconds
+[0m00:27:38.324953 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m00:27:38.325312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc48ac1c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc4b0e2e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc1b966750>]}
+[0m00:27:38.325692 [debug] [MainThread]: Flushing usage events
+[0m11:10:50.495534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d0fca95d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d0fcaae90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d0fc6e250>]}
+
+
+============================== 11:10:50.498576 | 57055fe4-85f2-4b2c-ab54-8d4b26b633a1 ==============================
+[0m11:10:50.498576 [info ] [MainThread]: Running with dbt=1.8.5
+[0m11:10:50.499184 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/home/quako/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt deps', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:10:50.499794 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/quako/dbt-pipelines/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:10:50.501422 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 0.05101787, "process_user_time": 1.189779, "process_kernel_time": 0.069987, "process_mem_max_rss": "89776", "process_in_blocks": "128", "process_out_blocks": "16", "command_success": false}
+[0m11:10:50.502010 [debug] [MainThread]: Command `dbt deps` failed at 11:10:50.501907 after 0.05 seconds
+[0m11:10:50.502406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d0fcb1690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d13772ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d136e0110>]}
+[0m11:10:50.502798 [debug] [MainThread]: Flushing usage events
+[0m12:04:24.629480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbeed4bed90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbeeb6ff690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbeeb6ffa90>]}
+
+
+============================== 12:04:24.633780 | afb83c15-9b31-45f8-b821-1d2d44bcd80e ==============================
+[0m12:04:24.633780 [info ] [MainThread]: Running with dbt=1.8.5
+[0m12:04:24.634385 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/quako/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:04:24.634864 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/quako/dbt-pipelines/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:04:24.636424 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.05332282, "process_user_time": 1.26985, "process_kernel_time": 0.247513, "process_mem_max_rss": "89704", "process_in_blocks": "39776", "process_out_blocks": "8", "command_success": false}
+[0m12:04:24.637058 [debug] [MainThread]: Command `dbt run` failed at 12:04:24.636937 after 0.05 seconds
+[0m12:04:24.637430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbeeb705b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbeef1becd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbeef1bec90>]}
+[0m12:04:24.637801 [debug] [MainThread]: Flushing usage events
